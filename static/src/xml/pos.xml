@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : <https://store.webkul.com/license.html/> -->
+
+<templates id="template" xml:space="preserve">
+    <t t-name="SynchNetworkPrinterWidget">
+        <div class="oe_status js_synch">
+            <div class="js_success oe_icon oe_green oe_hidden">
+                <i class='fa fa-fw fa-print'></i>
+            </div>
+            <div class="js_connected oe_icon oe_hidden" style="color: yellow;">
+                <i class='fa fa-fw fa-print'></i>
+            </div>
+
+            <div class="js_connecting oe_icon oe_hidden">
+                <i class='fa fa-fw fa-spin fa-spinner'></i>
+            </div>
+
+            <div class="js_c_error oe_icon oe_red oe_hidden">
+                <i class='fa fa-fw fa-print'></i>
+            </div>
+        </div>
+    </t>
+
+    <t t-extend="ReceiptScreenWidget">
+        <t t-jquery="div.centered-content" t-operation="append">
+            <div class="button nw_print">
+                <i class='fa fa-print'></i> Print via n/w Printer
+            </div>
+        </t>
+    </t>
+</templates>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : <https://store.webkul.com/license.html/> -->
+
+<odoo>
+    <template id="assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/lib/qz-tray.js"></script>
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/lib/rsvp-3.1.0.min.js"></script>
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/lib/sha-256.min.js"></script>
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/screens.js"></script>
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/chrome.js"></script>
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/devices.js"></script>
+            <script type="text/javascript" src="/odoo_pos_network_printer/static/src/js/models.js"></script>
+        </xpath>
+    </template>
+</odoo>

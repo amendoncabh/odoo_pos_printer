@@ -1,0 +1,423 @@
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : <https://store.webkul.com/license.html/> -->
+<html>
+ <body>
+  <section class="oe_container oe_dark lead">
+   <section class="oe_container oe_dark lead">
+    <h3 style="text-align: center;">
+     <font>
+      <p class=" text-center">
+       <h1 style="margin-top: 40px; text-align: center;">
+        POS Network Printer
+       </h1>
+       <br/>
+       Odoo Extension Allowing The User To Print Point Of Sales Order Receipts via ESC/POS Network Printer. No need of a PosBox.
+      </p>
+     </font>
+    </h3>
+    <div class="oe_row">
+     <p class="text-danger">
+      <b>
+       This module uses the QZ Tray client for sending direct print commands to the ESC/POS printer:
+      </b>
+     </p>
+     <ul>
+      <li>
+       Installation Link: (
+       <a href="https://qz.io/download/" target="_blank">
+        https://qz.io/download/
+       </a>
+       )
+      </li>
+      <li>
+       Demo Link: (
+       <a href="https://demo.qz.io/" target="_blank">
+        https://demo.qz.io/
+       </a>
+       )
+      </li>
+     </ul>
+    </div>
+    <div class="oe_row">
+     <div class="oe_span12">
+      <div class="panel panel-primary" id="wkid0">
+       <div class="panel-heading">
+        <h3 class="panel-title" style="font-size: 25px;">
+         <i class="fa fa-mail-forward ">
+         </i>
+         <b>
+          Salient Features
+         </b>
+        </h3>
+       </div>
+       <div class="panel-body">
+        <ul class="list-unstyled">
+         <li>
+          <i class="fa fa-check">
+          </i>
+          User can print the order receipts via the ESC/POS Network Printer. There is no need to use the PosBox.
+         </li>
+         <li>
+          <i class="fa fa-check">
+          </i>
+          User can configure the network printer's name in the POS Configuration page.
+         </li>
+         <li>
+          <i class="fa fa-check">
+          </i>
+          Qz Tray client must be installed for sending direct print commands to the ESC/POS printer.
+         </li>
+         <li>
+          <i class="fa fa-check">
+          </i>
+          User can check/refresh the printer connection directly from the POS Interface.
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </section>
+  <section class="oe_container oe_dark lead">
+   <div class="oe_row">
+    <div class="oe_span12">
+     <div class="panel" id="wkid2">
+      <div class="panel-heading">
+       <h3 class="panel-title" style="font-size: 25px;">
+        <i class="fa fa-wrench ">
+        </i>
+        <b>
+         POS Network Printer
+        </b>
+       </h3>
+      </div>
+      <div class="panel-body">
+       <div class="alert alert-info" style="padding:8px;font-weight: 300; font-size: 20px;">
+        <i class="fa fa-cog">
+        </i>
+        <b>
+         Configuring Network Printer
+        </b>
+       </div>
+       <p>
+        <i>
+         User can specify the ESC/POS Network Printer name in the Point Of Sale configuration form under the
+         <b>
+          IotBox / Hardware Proxy
+         </b>
+         section.
+        </i>
+       </p>
+       <p>
+        <a href="screen1.jpg">
+         <img class="oe_demo img-responsive oe_screenshot" src="screen1.jpg"/>
+        </a>
+       </p>
+       <p>
+        <i>
+         Make sure the
+         <b>
+          Printer's name
+         </b>
+         is exactly the same as the name of the printer is used by the QZ Tray client to make connection and send the print commands.
+        </i>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="oe_container oe_dark lead">
+   <div class="oe_row">
+    <div class="oe_span12">
+     <div class="panel" id="wkid3">
+      <div class="panel-heading">
+       <h3 class="panel-title" style="font-size: 25px;">
+        <i class="fa fa-pencil-square-o ">
+        </i>
+        <b>
+         POS Network Printer
+        </b>
+       </h3>
+      </div>
+      <div class="panel-body">
+       <div class="alert alert-info" style="padding:8px;font-weight: 300; font-size: 20px;">
+        <i class="fa fa-desktop">
+        </i>
+        <b>
+         ESC/POS Network Printer Connection
+        </b>
+       </div>
+       <p>
+        <i>
+         POS automatically connects to the configured printer when it is loaded. There is a connection notification icon that the user can check for the connection status. User can also click on the connection notification icon if he wishes to refresh the connection.
+        </i>
+       </p>
+       <p>
+        <video autoplay="" controls="" loop="true" muted="" width="90%">
+         <source src="video_connection.mp4" type="video/mp4">
+          <source src="video_connection.mp4" type="video/mp4">
+          </source>
+         </source>
+        </video>
+       </p>
+       <p>
+        <i>
+         Following are the possible connection statuses:
+        </i>
+       </p>
+       <div class="oe_span12">
+        <div class="oe_span4 oe_centered" style="margin-left: -2%;">
+         <h3 style="margin-left: 8%;">
+          Not-Connected
+         </h3>
+         <div class="oe_row_img oe_centered">
+          <a href="screen2.jpg">
+           <img class="oe_picture" src="screen2.jpg">
+           </img>
+          </a>
+         </div>
+         <p>
+          <i>
+           This means that the POS was unable to connect to the specified printer.
+           <b>
+            Make sure you have the Qz Tray client setup and its running
+           </b>
+           .
+          </i>
+         </p>
+        </div>
+        <div class="oe_span4 oe_centered" style="margin-left: -3%;">
+         <h3 style="margin-left:8%;">
+          Connected To Qz Tray
+         </h3>
+         <div class="oe_row_img oe_centered">
+          <a href="screen3.jpg">
+           <img class="oe_picture" src="screen3.jpg">
+           </img>
+          </a>
+         </div>
+         <p>
+          <i>
+           This means that the POS was able to connect to the Qz Tray client on your system and now needs to connect to the configured ESC/POS printer.
+          </i>
+         </p>
+        </div>
+        <div class="oe_span4 oe_centered" style="margin-left: -3%;">
+         <h3 style="margin-left:8%;">
+          Connected To The Specified Printer
+         </h3>
+         <div class="oe_row_img oe_centered">
+          <a href="screen4.jpg">
+           <img class="oe_picture" src="screen4.jpg">
+           </img>
+          </a>
+         </div>
+         <p>
+          <i>
+           This means that the POS has successfully established the connection with the configured printer via the Qz Tray Client.
+          </i>
+         </p>
+        </div>
+       </div>
+       <div class="alert alert-info" style="padding:8px;font-weight: 300; font-size: 20px;">
+        <i class="fa fa-desktop">
+        </i>
+        <b>
+         Printing the Receipt
+        </b>
+       </div>
+       <p>
+        <i>
+         POS automatically sends the print command to the ESC/POS Network Printer when the order is validated.
+        </i>
+       </p>
+       <p>
+        <video autoplay="" controls="" loop="true" muted="" width="90%">
+         <source src="video_printing.mp4" type="video/mp4">
+          <source src="video_printing.mp4" type="video/mp4">
+          </source>
+         </source>
+        </video>
+       </p>
+       <p>
+        <i>
+         User can print the receipts again from the Receipt Screen if he wishes to.
+        </i>
+       </p>
+       <div class="oe_demo img-responsive oe_screenshot">
+        <p>
+         <a href="screen5.jpg">
+          <img src="screen5.jpg"/>
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <div class="tab-pane active" id="faq">
+  </div>
+  <section class="oe_container oe_dark">
+   <center>
+    <div class="text-center">
+     <h2 class="oe_slogan">
+      Complimentary Support
+     </h2>
+     <p style="text-align: center;">
+      You will get 90 days free support for any doubt, queries, and bug fixing (excluding data recovery) or any type of issue related to this module.
+     </p>
+    </div>
+   </center>
+   <div class="text-center">
+    <div class="text-center">
+     <h2 class="text-center oe_slogan">
+      Help and Support
+     </h2>
+    </div>
+    <div class="oe_slogan oe_spaced text-center">
+     <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Help !">
+      <i class="fa fa-life-ring">
+      </i>
+      Help
+     </a>
+     <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Support!">
+      <i class="fa fa-ticket">
+      </i>
+      Support
+     </a>
+     <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Request Features now !">
+      <i class="fa fa-check-circle">
+      </i>
+      Request new Features
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="oe_container">
+   <div class="oe_span12">
+    <!-- Piwik Image Tracker-->
+    <img alt="" src="http://odooimg.webkul.com/analytics/piwik/piwik.php?idsite=3&amp;rec=1&amp;action_name=POS-Network-Printer&amp;url=https://apps.openerp.com/apps/modules/13.0/odoo_pos_network_printer&amp;uid=odoo_pos_network_printer" style="border:0"/>
+    <!-- End Piwik -->
+   </div>
+  </section>
+ </body>
+</html>
+<div class="tab-pane active" id="faq">
+</div>
+<section class="oe_container oe_dark">
+ <center>
+  <div class="text-center">
+   <h2 class="oe_slogan">
+    Complimentary Support
+   </h2>
+   <p style="text-align: center;">
+    You will get 90 days free support for any doubt, queries, and bug fixing (excluding data recovery) or any type of issue related to this module.
+   </p>
+  </div>
+ </center>
+ <div class="text-center">
+  <div class="text-center">
+   <h2 class="text-center oe_slogan">
+    Help and Support
+   </h2>
+  </div>
+  <div class="oe_slogan oe_spaced text-center">
+   <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Help !">
+    <i class="fa fa-life-ring">
+    </i>
+    Help
+   </a>
+   <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Support!">
+    <i class="fa fa-ticket">
+    </i>
+    Support
+   </a>
+   <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Request Features now !">
+    <i class="fa fa-check-circle">
+    </i>
+    Request new Features
+   </a>
+  </div>
+ </div>
+</section>
+<section class="oe_container">
+ <div class="oe_span12">
+  <!-- Piwik Image Tracker-->
+  <img alt="" src="http://odooimg.webkul.com/analytics/piwik/piwik.php?idsite=3&amp;rec=1&amp;action_name=POS-Network-Printer&amp;url=https://apps.openerp.com/apps/modules/13.0/odoo_pos_network_printer&amp;uid=odoo_pos_network_printer" style="border:0"/>
+  <!-- End Piwik -->
+ </div>
+</section>
+Help and Support
+<div class="oe_slogan oe_spaced text-center">
+ <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Help !">
+  <i class="fa fa-life-ring">
+  </i>
+  Help
+ </a>
+ <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Support!">
+  <i class="fa fa-ticket">
+  </i>
+  Support
+ </a>
+ <a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Request Features now !">
+  <i class="fa fa-check-circle">
+  </i>
+  Request new Features
+ </a>
+</div>
+<section class="oe_container">
+ <div class="oe_span12">
+  <!-- Piwik Image Tracker-->
+  <img alt="" src="http://odooimg.webkul.com/analytics/piwik/piwik.php?idsite=3&amp;rec=1&amp;action_name=POS-Network-Printer&amp;url=https://apps.openerp.com/apps/modules/13.0/odoo_pos_network_printer&amp;uid=odoo_pos_network_printer" style="border:0"/>
+  <!-- End Piwik -->
+ </div>
+</section>
+ouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Help !"&gt;
+<i class="fa fa-life-ring">
+</i>
+Help
+<a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Support!">
+ <i class="fa fa-ticket">
+ </i>
+ Support
+</a>
+<a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Request Features now !">
+ <i class="fa fa-check-circle">
+ </i>
+ Request new Features
+</a>
+<section class="oe_container">
+ <div class="oe_span12">
+  <!-- Piwik Image Tracker-->
+  <img alt="" src="http://odooimg.webkul.com/analytics/piwik/piwik.php?idsite=3&amp;rec=1&amp;action_name=POS-Network-Printer&amp;url=https://apps.openerp.com/apps/modules/13.0/odoo_pos_network_printer&amp;uid=odoo_pos_network_printer" style="border:0"/>
+  <!-- End Piwik -->
+ </div>
+</section>
+wik -->
+ </div>
+</section>
+ouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Help !"&gt;
+<i class="fa fa-life-ring">
+</i>
+Help
+<a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Get Instant Support!">
+ <i class="fa fa-ticket">
+ </i>
+ Support
+</a>
+<a href="https://webkul.uvdesk.com/en/customer/create-ticket/" onmouseout="this.style.color='#7c7bad'" onmouseover="this.style.color='#AC1EE0'" style="color:#7c7bad;" title="Request Features now !">
+ <i class="fa fa-check-circle">
+ </i>
+ Request new Features
+</a>
+<section class="oe_container">
+ <div class="oe_span12">
+  <!-- Piwik Image Tracker-->
+  <img alt="" src="http://odooimg.webkul.com/analytics/piwik/piwik.php?idsite=3&amp;rec=1&amp;action_name=POS-Network-Printer&amp;url=https://apps.openerp.com/apps/modules/13.0/odoo_pos_network_printer&amp;uid=odoo_pos_network_printer" style="border:0"/>
+  <!-- End Piwik -->
+ </div>
+</section>

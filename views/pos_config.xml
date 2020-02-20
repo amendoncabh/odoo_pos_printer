@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : <https://store.webkul.com/license.html/> -->
+
+<odoo>
+     <record id="view_pos_config_form_inherit" model="ir.ui.view">
+        <field name="name">POS configuration</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='barcode_scanner']" position="after">
+                <div class="col-xs-12 col-md-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="iface_network_printer"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="iface_network_printer"/>
+                        <div class="text-muted">
+                            Network Printer Configuration
+                        </div>
+                        <div class="content-group mt16" attrs="{'invisible': [('iface_network_printer', '=', False)]}">
+                            <div class="row mt16">
+                                <label string="Printer Name" for="printer_name" class="col-md-3 o_light_label" />
+                                <field name="printer_name" attrs="{'required': [('iface_network_printer', '=', True)]}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
