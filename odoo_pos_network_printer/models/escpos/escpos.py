@@ -936,4 +936,4 @@ class Escpos:
             msg = msg and msg.decode("UTF")
         except Exception as e:
             msg = msg
-        self.esc_commands += msg
+        self.esc_commands += str(msg, "utf-8")
