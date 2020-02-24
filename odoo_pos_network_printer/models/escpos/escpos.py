@@ -939,9 +939,9 @@ class Escpos:
         # self.esc_commands += msg
         try:
             if isinstance(msg, bytes):
-                msg = msg.decode("UTF")
+                msg = str(msg, "utf-8")
             elif isinstance(msg, str):
                 msg = msg
         except Exception as e:
             msg = msg
-        self.esc_commands += msg.decode("UTF") if isinstance(msg, bytes) else "{}".format(msg)
+        self.esc_commands += "{}".format(msg)
