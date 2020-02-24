@@ -932,8 +932,16 @@ class Escpos:
         # if msg == "\n":
         #     msg = CTL_LF
         #     print("------------------------slash N Mila-------------%r", msg)
+        # try:
+        #     msg = msg and msg.decode("UTF")
+        # except Exception as e:
+        #     msg = msg
+        # self.esc_commands += msg
         try:
-            msg = msg and msg.decode("UTF")
+            if msg and isinstance(msg, bytes):
+                msg = msg.decode("UTF")
+            elif msg and isinstance(msg, str):
+                msg = msg
         except Exception as e:
             msg = msg
-        self.esc_commands += "{}".format(msg)
+        self.esc_commands += msg
